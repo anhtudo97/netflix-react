@@ -12,7 +12,7 @@ interface ListItemProps {
 }
 
 export const ListItem: React.FC<ListItemProps> = ({ index }) => {
-  const [isHovered, setIsHovered] = useState<Boolean>(false);
+  const [isHovered, setIsHovered] = useState<Boolean>(true);
   const trailer =
     "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761";
   return (
@@ -27,7 +27,7 @@ export const ListItem: React.FC<ListItemProps> = ({ index }) => {
         alt=""
       />
       {isHovered && (
-        <>
+        <div className="hoverContainer">
           <video src={trailer} autoPlay={true} loop />
           <div className="itemInfo">
             <div className="icons">
@@ -41,15 +41,9 @@ export const ListItem: React.FC<ListItemProps> = ({ index }) => {
               <span className="limit">+16</span>
               <span>1999</span>
             </div>
-            <div className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              inventore explicabo rem perspiciatis totam nulla quisquam
-              doloribus harum nemo? Inventore tenetur optio fuga, consectetur
-              tempora culpa laudantium voluptatem beatae sed?
-            </div>
             <div className="genre">Action</div>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

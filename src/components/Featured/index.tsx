@@ -7,7 +7,7 @@ interface FeaturedProps {
 
 export const Featured: React.FC<FeaturedProps> = ({ type }) => {
   return (
-    <div className="relative" style={{ height: "90vh" }}>
+    <div className="featured">
       {type && (
         <div className="category">
           <span>{type === "movie" ? "Movies" : "Series"}</span>
@@ -49,7 +49,7 @@ export const Featured: React.FC<FeaturedProps> = ({ type }) => {
             <PlayArrow />
             <span>Play</span>
           </button>
-          <button className="More">
+          <button className="more">
             <InfoOutlined />
             <span>Info</span>
           </button>

@@ -43,7 +43,7 @@ export const List = () => {
         />
         <div className="container">
           <ListItem index={0} />
-          <ListItem index={1} />
+          {/* <ListItem index={1} />
           <ListItem index={2} />
           <ListItem index={3} />
           <ListItem index={4} />
@@ -51,7 +51,7 @@ export const List = () => {
           <ListItem index={6} />
           <ListItem index={7} />
           <ListItem index={8} />
-          <ListItem index={9} />
+          <ListItem index={9} /> */}
         </div>
         <ArrowForwardIosOutlined
           className="sliderArrow right"

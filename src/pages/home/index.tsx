@@ -9,9 +9,9 @@ export const Home = () => {
       <Navbar />
       <Featured type="Movies"/>
       <List />
+      {/* <List />
       <List />
-      <List />
-      <List />
+      <List /> */}
     </div>
   );
 };
